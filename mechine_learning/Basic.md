@@ -123,7 +123,9 @@ $$FPR=\frac{FP}{TN+FP}$$
 
 
 现实任务中通常是利用有限个测试样例来绘制ROC图，此时仅能获得有限个(真正例率，假正例率)坐标对，无法产生图中的光滑ROC曲线，只能绘制出下图所示的近似ROC曲线。
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200916224222934.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzMzMjQyMg==,size_16,color_FFFFFF,t_70#pic_center)
+
 对于学习器的比较时，与P-R图类似，若一个学习器的ROC曲线被另一个学习器的曲线完全“包住”，则可断言后者的性能优于前者；若两个学习器的ROC曲线发生交叉，则难以一般性地断言两者孰优孰劣。
 此时如果要进行比较，较为合理的判据是比较ROC曲线下的面积，即AUC(Area Under ROC Curve)。
 
